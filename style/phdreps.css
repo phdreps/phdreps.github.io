@@ -5,88 +5,51 @@ body {
 .big{display:block;}
 .small{display:none;}
 
-/* The side navigation menu */
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-   }
-   
-   /* Sidebar links */
-   .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
+ /* The sidebar menu */
+ .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:#08438A; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-   }
-   
-   /* Active/current link */
-   .sidebar a.active {
-    background-color: #4CAF50;
-    color: white;
-   }
-   
-   /* Links on mouse-over */
-   .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-   }
-
-   /*divt*/
-@media only screen and (min-width: 481px) and (max-width: 660px){
-    div.container{width: 600px !important;}
-    img.big{display:none}
-    img.small{display: block}
-    div.banner { font-size: 22px !important; }
-    
-    div.intro { padding: 30px 30px 30px 30px !important; }
-    div.intro h1 { font-size: 28px !important; }
-    
-    div.content_row div { width: 250px !important; }
-    div.content_row div div h2 { margin-bottom: 8px; }
-    
-    div.content_2{height: 100% !important}
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-      .sidebar a {float: left;}
-      div.content {margin-left: 0;}
-    }
-}
-
-/*Sizes under 600*/
-@media only screen and (max-width: 480px){
-    div.container{width: 100% !important;}
-    img.big{display:none}
-    img.small{display: block}
-    div.banner { font-size: 20px !important; }
-    div.intro { padding: 30px 30px 30px 30px !important; }
-    div.intro h1 { font-size: 28px !important; }
-    div.banner {width:100%;}
-    div.content_left{height: 100% !important; width:100% !important}
-    div.content_right{height: 100% !important; width:100% !important}
-    .sidebar a {
-        text-align: center;
-        float: none;
-      }
-
-}
+    font-size: 18px;
+    color:  #F8F9F9;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f7971b;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 14px;}
+  } 
 
 div.container {
     width: 800px;
-    margin: 0px auto;
+    margin-left:160px;
+    margin-top:160px;
     border: 0;
-    padding: 10px;
+    padding: 0px;
     spacing: 0px;
 }
 div.banner{
     background-color:#F8F9F9;
+    position:fixed;
+    top:0;
     padding:0px; 
     font-size: 30px; 
     text-align: center;
