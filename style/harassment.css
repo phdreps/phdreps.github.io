@@ -46,6 +46,11 @@ body {
     padding: 0px 0px;
   }
 
+ a{
+    color: #FF4040;
+    font-style: 'bolder'; 
+   }
+
 div.container {
     width: 1000px;
     margin: 160px auto 0px auto;
@@ -86,12 +91,8 @@ div.content{
     align-self: left;
     font-size: 16px;
     height: 100%;
-    vertical-align:middle
+    vertical-align:middle;
 }
-
-
-a{ color: #FF4040;
-    font-style: 'bolder'; }
     
 .button {
     color: #F8F9F9;
