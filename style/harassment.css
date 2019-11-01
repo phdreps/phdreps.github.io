@@ -46,10 +46,15 @@ body {
     padding: 0px 0px;
   }
 
- a{
+a{
     color: #FF4040;
     font-style: 'bolder'; 
-   }
+}
+
+a:hover{
+    color: #B3B6B7;
+    font-style: 'bolder'; 
+}   
 
 div.container {
     width: 1000px;
